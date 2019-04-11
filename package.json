@@ -1,0 +1,31 @@
+{
+  "name": "brb",
+  "version": "1.0.0",
+  "description": "Simple placeholder for system downtime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src",
+    "lint": "node ./node_modules/eslint/bin/eslint.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessety/brb.git"
+  },
+  "author": "Jesse T Youngblood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessety/brb/issues"
+  },
+  "homepage": "https://github.com/jessety/brb#readme",
+  "devDependencies": {
+    "@jessety/eslint-config": "^1.0.3",
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "env-smart": "^1.4.0",
+    "express": "^4.16.4",
+    "simple-express-logs": "^1.2.1",
+    "simple-log-colors": "^1.0.0"
+  }
+}
