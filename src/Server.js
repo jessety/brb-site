@@ -28,7 +28,7 @@ class Server {
 
     if (this.settings.verbose === true) {
       // eslint-disable-next-line no-console
-      console.log(colors.blue(`Server`), ...messages);
+      console.log(colors.blue(name), ...messages);
     }
   }
 
@@ -39,7 +39,7 @@ class Server {
     this.app = this.setup();
 
     this.server = http.createServer(this.app).listen(port, () => {
-      this.log(`${name} ${version} live on port ${port} 👌`);
+      console.log(`${name} ${version} live on port ${port} 👌`);
     });
   }
 
@@ -55,8 +55,10 @@ class Server {
 
     const app = express();
 
-    // Log incoming requests
-    app.use(logger);
+    // Log incoming requests, if verbose debug is enabled
+    if (this.settings.verbose === true) {
+      app.use(logger);
+    }
 
     // Replace default branding
     app.use((request, response, next) => {
