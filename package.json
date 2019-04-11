@@ -8,6 +8,7 @@
     "start": "node src",
     "lint": "node ./node_modules/eslint/bin/eslint.js ."
   },
+  "bin": "./src/cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jessety/brb.git"
