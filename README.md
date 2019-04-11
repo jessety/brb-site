@@ -7,7 +7,7 @@ Sure, it shouldn't ever happen. Failover should work just fine. The deploy shoul
 `brb-site` serves a simple downtime message HTML page with client-side JavaScript to push users to your site once it's back. Every 15 seconds, the page makes a request to the server in the background. So long as it gets back a response, the page reloads. If `brb-site` is still running, nothing will change. If your site is back, this ensures they're bounced back to it as soon as possible. If the server is hard-down while your site is spinning up, the page won't reload until it's up.
 
 <p align="center">
-<img src="docs/mobile.png" height="300" /> <img src="docs/desktop.png" height="300" />
+<img src="docs/mobile.png" height="350" /> <img src="docs/desktop.png" height="350" />
 </p>
 
 ## Install
