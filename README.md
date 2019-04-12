@@ -13,17 +13,18 @@ Sure, it shouldn't ever happen. Failover should work just fine. The deploy shoul
 ## Install
 
 ```bash
-$ npm install
+$ npm install -g brb-site
 ```
 
 ## Usage
 
 ```bash
-$ npm run start
+$ brb-site
 ```
 
 Alternatively, use `npm link` to link the cli interface globally.
 ```bash
+$ npm install
 $ npm link
 $ brb-site
 ```
