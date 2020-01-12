@@ -26,7 +26,6 @@
   "dependencies": {
     "env-smart": "^1.4.0",
     "express": "^4.16.4",
-    "simple-express-logs": "^1.2.1",
     "simple-log-colors": "^1.0.0"
   }
 }

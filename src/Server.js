@@ -2,9 +2,9 @@
 
 const http = require('http');
 const express = require('express');
-const logger = require('simple-express-logs')();
 const colors = require('simple-log-colors');
 
+const logger = require('./logger')();
 const { name, version } = require('../package.json');
 
 class Server {
