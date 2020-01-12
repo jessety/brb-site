@@ -1,6 +1,6 @@
 {
   "name": "brb-site",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple web server that returns a maintenance message",
   "main": "index.js",
   "scripts": {
