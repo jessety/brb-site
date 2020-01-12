@@ -14,7 +14,7 @@ function middleware(request, response, next) {
   let ip = request.connection.remoteAddress.replace('::ffff:', '');
 
   // If this was forwarded for something, us that IP instead
-  if (request.headers.hasOwnProperty('x-forwarded-for')) {
+  if (request.headers['x-forwarded-for'] !== undefined) {
 
     ip = request.headers['x-forwarded-for'];
     delete request.headers['x-forwarded-for'];
@@ -32,7 +32,7 @@ function middleware(request, response, next) {
 
 function reverseDNS(ip) {
 
-  if (cache.hasOwnProperty(ip)) {
+  if (cache.ip !== undefined) {
 
     return cache[ip];
   }
