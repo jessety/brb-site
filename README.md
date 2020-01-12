@@ -63,6 +63,12 @@ brb.start();
 brb.stop();
 ```
 
+## FAQ
+
+> Is this some kind of joke?
+
+Yes.
+
 ## License
 
 MIT © Jesse Youngblood
